@@ -28,8 +28,10 @@ p, label {
   color: #51617a;
 }
 
-input:focus, select:focus, textarea:focus, button:focus {
+input:focus, select:focus, textarea:focus {
   border: 2px solid #2e3847;
+  transition-property: background-color;
+  background-color: #f0e1f7;
 }
 
 /* ELEMENTS */
@@ -77,11 +79,16 @@ button {
   font-weight: 800;
 }
 
+button:focus {
+  border: 5px solid #d499f0;
+}
+
 footer p {
   background-color: #833ca3;
   color: white;
   padding: 4% 0 6% 0;
   font-style: italic;
+  font-size: 65%;
 }
 
 /* PSEUDO-ELEMENTS */
