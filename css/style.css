@@ -44,7 +44,6 @@ header {
 }
 
 form {
-  padding-top: 4%;
   padding-bottom: 4%
 }
 
@@ -115,6 +114,11 @@ select {
 
 #info h2 {
   margin-bottom: 3%;
+  font-size: 125%;
+  }
+
+#info p {
+  font-size: 80%;
 }
 
 #zip {
@@ -147,10 +151,15 @@ select {
 
 .border-2 {
   border: 1.5px solid #2e3847;
-  margin: 1% 1.5% 0 1.5%;
+  margin: 1% 1.5% 6% 1.5%;
 }
 
 .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.zip-cot {
   display: flex;
   flex-direction: column;
 }
@@ -164,8 +173,74 @@ select {
 
 @media (min-width: 768px) {
 
-  /* ELEMENTS */
+  #info p, label, ::placeholder, input, select {
+    font-size: .55em;
+  }
+
+  header {
+    padding-bottom: 2.5%;
+  }
+
+  header h1 {
+    font-size: 1.25em;
+  }
+
+  #info h2 {
+    font-size: 1em;
+  }
+
+  legend {
+    font-size: .8em;
+  }
+
+  .full-cot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: center;
+  }
 
   /* CLASSES */
+
+  .container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+
+  .container label {
+    min-width: 30%;
+  }
+
+  .container input, .container select {
+    min-width: 70%;
+    margin: 2% 0 2% 0;
+    padding: 4% 2% 4% 2%;
+  }
+
+  button {
+    padding: 2% 0 2% 0;
+  }
+
+  textarea {
+    min-width: 100%;
+  }
+
+  #zip {
+    width: 25%;
+    padding: 4% 2% 4% 2%;
+  }
+
+  .zip-cot {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .zip-cot label {
+    min-width: 30%;
+    align-self: center;
+  }
 
 }
