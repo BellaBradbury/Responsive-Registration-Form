@@ -1,10 +1,15 @@
 
 
-/* font-family: 'Cinzel', serif; */
+/* font-family: 'Cinzel', serif;
+    500, 800  */
+
+
+
 
 /* =================================
   PAGE STYLES
 ==================================== */
+
 
 /* UNIVERSAL */
 
@@ -34,6 +39,7 @@ input:focus, select:focus, textarea:focus {
   background-color: #f0e1f7;
 }
 
+
 /* ELEMENTS */
 
 header {
@@ -51,20 +57,24 @@ fieldset {
   margin-top: 2%;
 }
 
-label {
-  margin: 1% 0 1% 0;
-}
-
 legend {
   font-weight: bolder;
   font-size: 125%;
   margin-bottom: 2%;
 }
 
+label {
+  margin: 1% 0 1% 0;
+}
+
 input, select, textarea {
   background-color: #f0f2f5;
   padding: 1.5rem;
   border-radius: .5rem;
+}
+
+select {
+  color: #abb0b8;
 }
 
 button {
@@ -90,6 +100,7 @@ footer p {
   font-size: 65%;
 }
 
+
 /* PSEUDO-ELEMENTS */
 
 ::placeholder {
@@ -97,11 +108,6 @@ footer p {
   font-style: italic;
   color: #abb0b8;
 }
-
-select {
-  color: #abb0b8;
-}
-
 
 
 /* IDS */
@@ -135,12 +141,14 @@ select {
   margin-top: 3.5%;
 }
 
+
 /* TYPES */
 
 [type="checkbox"], [type="radio"] {
   margin-right: 5%;
   margin-top: 3.5%;
 }
+
 
 /* CLASSES */
 
@@ -173,9 +181,23 @@ select {
 
 @media (min-width: 768px) {
 
+
+  /* UNIVERSAL */
+
   #info p, label, ::placeholder, input, select {
     font-size: .55em;
   }
+
+  .full-cot {
+    display: flex;
+    flex-direction: column;
+    margin-left: 25%;
+    margin-right: 25%;
+    justify-content: center;
+  }
+
+
+  /* ELEMENTS */
 
   header {
     padding-bottom: 2.5%;
@@ -185,20 +207,15 @@ select {
     font-size: 1.25em;
   }
 
-  #info h2 {
-    font-size: 1em;
-  }
-
   legend {
     font-size: .8em;
   }
 
-  .full-cot {
-    display: flex;
-    flex-direction: column;
-    margin-left: 25%;
-    margin-right: 25%;
-    justify-content: center;
+
+  /* IDS */
+
+  #info h2 {
+    font-size: 1em;
   }
 
   /* CLASSES */
@@ -233,14 +250,14 @@ select {
     padding: 4% 2% 4% 2%;
   }
 
-  .zip-cot {
-    display: flex;
-    flex-direction: row;
-  }
-
   .zip-cot label {
     min-width: 30%;
     align-self: center;
+  }
+
+  .zip-cot {
+    display: flex;
+    flex-direction: row;
   }
 
 }
