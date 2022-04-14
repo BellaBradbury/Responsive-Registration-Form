@@ -184,9 +184,9 @@ footer p {
 
   /* UNIVERSAL */
 
-  #info p, label, ::placeholder, input, select {
+  /* #info p, label, ::placeholder, input, select {
     font-size: .55em;
-  }
+  } */
 
   .full-cot {
     display: flex;
