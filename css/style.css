@@ -35,10 +35,13 @@ p, label {
 
 input:focus, select:focus, textarea:focus {
   border: 2px solid #2e3847;
-  transition-property: background-color;
   background-color: #f0e1f7;
 }
 
+input, select, textarea {
+  transition-property: background-color;
+  transition-duration: 1s;
+}
 
 /* ELEMENTS */
 
@@ -201,14 +204,6 @@ footer p {
 
   header {
     padding-bottom: 2.5%;
-  }
-
-  header h1 {
-    font-size: 1.25em;
-  }
-
-  legend {
-    font-size: .8em;
   }
 
 
