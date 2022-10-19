@@ -1,5 +1,5 @@
 # Create A Responsive Registration Form
-Team Treehouse - Front End Web Development TechDegree - Project 3
+Team Treehouse - Web Development TechDegree - Project 3
 
 Submitted 4/15/22 ***EXCEEDS EXPECTATIONS***
 
