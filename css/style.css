@@ -41,6 +41,9 @@ input:focus, select:focus, textarea:focus {
 input, select, textarea {
   transition-property: background-color;
   transition-duration: 1s;
+  background-color: #f0f2f5;
+  padding: 1.5rem;
+  border-radius: .5rem;
 }
 
 /* ELEMENTS */
@@ -68,12 +71,6 @@ legend {
 
 label {
   margin: 1% 0 1% 0;
-}
-
-input, select, textarea {
-  background-color: #f0f2f5;
-  padding: 1.5rem;
-  border-radius: .5rem;
 }
 
 select {
@@ -179,7 +176,7 @@ footer p {
 
 
 /* =================================
-  MEDIA QUIRIES
+  MEDIA QUERIES
 ==================================== */
 
 @media (min-width: 768px) {
